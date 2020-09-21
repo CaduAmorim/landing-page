@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background: -webkit-linear-gradient(25deg,#fff,#6c3fcd);
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: 'Roboto' , sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 95%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2rem;
+    align-items: baseline;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li .navBtn {
+    color: #6c3fcd;
+    background-color: white;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    border-radius: 4rem 4rem 4rem 4rem;
+}
+
+header nav ul li a {
+    font-size: medium;
+    text-decoration: none;
+    padding-right: 2.4rem;
+    color: #fff
+}
+
+header .container a {
+    text-decoration: none;
+}
+
+header .container a h1{
+    font-size: 5rem;
+    margin-left: 20px;
+    background: -webkit-linear-gradient(20deg,#6c3fcd, #7092d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*************HERO**************/
+
+section.sessao1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    box-sizing: border-box;
+    flex-flow: wrap;
+}
+
+section.sessao1 .content{
+    max-width: 700px;
+}
+
+section.sessao1 .content h2 {
+    font-size: 3em;
+    color: black;
+}
+
+section.sessao1 .content p {
+    text-align: justify;
+    font-size: 1.8rem;
+    color: black;
+    padding-top: 4rem;
+    margin-bottom: 10rem;
+}
+
+section.sessao1.content.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800%;
+}
+
+.button1 ,
+.button2{
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    border-radius: 4rem 4rem 4rem 4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.button1 {
+    background: linear-gradient(45deg, #6c3fcd, #7092d1);
+    margin-right: 10rem;
+}
+
+.button2 {
+    background: linear-gradient(-45deg, #fe5454, #ff7349);
+    margin-right: 10rem;
+}
+
+

@@ -1,0 +1,114 @@
+html {
+    font-size: 50%;
+}
+
+.sessao1 img {
+    order: -1;
+}
+
+@media(max-width: 768px){
+    .sessao1 .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 627px) {
+    .sessao1 .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 548px) {
+    nav {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: whitesmoke;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        border-radius: 4px;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+      }
+
+      /*FULLSCREEN MENU*/
+      .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #6c3fcd;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition-duration: 0.5;
+      }
+
+      .menu-section.on nav {
+          display: block;
+      }
+
+      .menu-section.on .menu-toggle {
+          position: absolute;
+          right: 2px;
+          top: 15px;
+      }
+
+      .menu-section.on .menu-toggle .one {
+          transform: rotate(45deg) translate(7px, 7px);
+      }
+
+      .menu-section.on .menu-toggle .two {
+          opacity: 0;
+      }
+      
+      .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+      }
+
+      .menu-section.on nav ul {
+          text-align: center;
+          display: block;
+      }
+
+      .menu-section.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        display: block;    
+      }
+    .sessao1 .content .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .content .buttons .button1 {
+        margin: 0 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .content .buttons .button2 {
+        margin: 0 5rem;
+    }
+}
